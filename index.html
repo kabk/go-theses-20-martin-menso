@@ -100,7 +100,7 @@ With the fast development of 3D technology we achieved the means and tools of re
           transform: rotateY(180deg) translateZ(75px);
        }
 
-       .cube .four
+    .layer-6
        {
           -webkit-transform: rotateY(-90deg) translateZ(75px);
           transform: rotateY(-90deg) translateZ(75px);
@@ -129,9 +129,10 @@ With the fast development of 3D technology we achieved the means and tools of re
           display: block;
           margin-top: 1em;
        }
+
+
+
     </style>
-
-
 
 
     <span id="do-unsupported" class="hidden"></span>
@@ -159,8 +160,8 @@ With the fast development of 3D technology we achieved the means and tools of re
           document.getElementById('do-info').classList.remove('hidden');
 
           window.addEventListener('deviceorientation', function(event) {
-             document.getElementById('layer-2').style.webkitTransform =
-             document.getElementById('layer-2 ').style.transform =
+             document.getElementById('cube').style.webkitTransform =
+             document.getElementById('cube').style.transform =
                      'rotateX(' + event.beta + 'deg) ' +
                      'rotateY(' + event.gamma + 'deg) ' +
                      'rotateZ(' + event.alpha + 'deg)';
