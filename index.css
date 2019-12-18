@@ -1,15 +1,15 @@
 body {
   padding: 0;
   margin: 0;
-  background-color:yellow;
+  background-color:white;
   /* font-family: "Playfair Display", serif;
   color: #fff; */
 }
 
 
 .p1{
-  padding: 100px;
-  margin: 100px;
+  padding: 10px;
+  margin: 10px;
   width: 100%;
   color:red;
     /* z-index: -1; */
