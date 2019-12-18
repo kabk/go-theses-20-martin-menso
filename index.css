@@ -27,16 +27,16 @@ body {
 }
 
 .layer-bg {
-   background-image: url("testimages/pink01v.png");
-   style=width:100%;
+   background-image: url("img/pink01v.png");
+   width:100%;
     opacity: 0.7;
 
 
 }
 
 .layer-1 {
-  background-image: url("testimages/blue01h.png");
-  style= width:100%;
+  background-image: url("img/blue01h.png");
+  width:100%;
    opacity: 0.7;
    /* opacity: 0.7; */
 
@@ -45,48 +45,57 @@ body {
 }
 
 .layer-2 {
-  background-image: url("testimages/lightblue01v.png");
-  style= width:100%;
+  background-image: url("img/lightblue01v.png");
+  width:100%;
   opacity: 0.7;
   /* background-size: cover; */
 }
 
 .layer-3 {
-  background-image: url("testimages/yellow01h.png");
-  style= width:100%;
+  background-image: url("img/yellow01h.png");
+  width:100%;
   opacity: 0.7;
   /* background-position: right bottom; */
 }
 
 .layer-4 {
-  background-image: url("testimages/red01h.png");
-  style= width:100%;
+  background-image: url("img/red01h.png");
+  width:100%;
   opacity: 0.7;
 }
 
 .layer-5 {
-  background-image: url("testimages/pink01v.png");
-  style= width:100%;
+  background-image: url("img/pink01v.png");
+  width:100%;
   opacity: 0.7;
   /* background-size: cover; */
 }
 
 .layer-6 {
-    background-image: url("testimages/turk01v.png");
-    style= width:100%;
+    background-image: url("img/turk01v.png");
+    width:100%;
     opacity: 0.7;
     /* background-position: right bottom; */
 
 
 }
 .layer-7 {
-    background-image: url("testimages/orange01v.png");
-    style= width:100%;
+    background-image: url("img/orange01v.png");
+    width:100%;
     opacity: 0.5;
     /* background-position: cover; */
 
 
 }
 
+@media (min-width: 320px) and (max-width: 480px) {
+
+  .p1{
+    padding: 5px;
+    margin: 5px;
+    color:blue;
+      /* z-index: -1; */
+
+  }
 
 }
