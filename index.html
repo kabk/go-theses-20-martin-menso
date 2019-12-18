@@ -147,42 +147,7 @@ With the fast development of 3D technology we achieved the means and tools of re
           <div class="face five">LOOOOOOL</div>
           <div class="face six">LOOOOOOL</div>
        </div>
-       <div id="do-info" class="hidden">
-          <!-- <p>
 
-             (<span id="beta" class="value">null</span>,
-             <span id="gamma" class="value">null</span>,
-             <span id="alpha" class="value">null</span>)
-             <br />
-            <span id="is-absolute" class="value">unavailable</span>
-          </p>
-       </div>
-       <div id="dm-info" class="hidden">
-          <p>
-
-             (<span id="acceleration-x" class="value">null</span>,
-             <span id="acceleration-y" class="value">null</span>,
-             <span id="acceleration-z" class="value">null</span>)
-             m/s<sup>2</sup>
-          </p>
-          <p>
-
-             (<span id="acceleration-including-gravity-x" class="value">null</span>,
-             <span id="acceleration-including-gravity-y" class="value">null</span>,
-             <span id="acceleration-including-gravity-z" class="value">null</span>)
-             m/s<sup>2</sup>
-          </p>
-          <p>
-
-             (<span id="rotation-rate-beta" class="value">null</span>,
-             <span id="rotation-rate-gamma" class="value">null</span>,
-             <span id="rotation-rate-alpha" class="value">null</span>)
-          </p>
-          <p>
-            <span id="interval" class="value">0</span>
-          </p> -->
-       </div>
-    </div>
 
 
 
@@ -194,8 +159,8 @@ With the fast development of 3D technology we achieved the means and tools of re
           document.getElementById('do-info').classList.remove('hidden');
 
           window.addEventListener('deviceorientation', function(event) {
-             document.getElementById('cube').style.webkitTransform =
-             document.getElementById('cube').style.transform =
+             document.getElementById('layer-2').style.webkitTransform =
+             document.getElementById('layer-2 ').style.transform =
                      'rotateX(' + event.beta + 'deg) ' +
                      'rotateY(' + event.gamma + 'deg) ' +
                      'rotateZ(' + event.alpha + 'deg)';
