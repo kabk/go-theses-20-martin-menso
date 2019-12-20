@@ -59,9 +59,10 @@ body {
 }
 
 .layer-4 {
-  background-image: url("img/red01h.png");
-  width:100%;
-  opacity: 0.7;
+  background-image: url("img/rock01.png");
+  background-size: cover;
+  /* width:100%; */
+  /* opacity: 0.7; */
 }
 
 .layer-5 {
