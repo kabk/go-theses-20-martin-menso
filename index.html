@@ -59,8 +59,8 @@ With the fast development of 3D technology we achieved the means and tools of re
 
        .cube
        {
-          width: 150px;
-          height: 150px;
+          width: 100%;
+          height: 100%;
           position: relative;
           margin: 30px auto;
           -webkit-transform-style: preserve-3d;
@@ -69,25 +69,29 @@ With the fast development of 3D technology we achieved the means and tools of re
 
        .face
        {
-          width: 150px;
-          height: 150px;
+          width: 480px;
+          height: 400px;
           position: absolute;
           font-size: 80px;
           text-align: center;
           line-height: 150px;
-          background-color: #999999;
+          background-image: url("img/rock02.png");
+          background-size: contain;
+          /* background-color: yellow; */
           box-shadow: inset 0 0 20px #333333;
-          opacity: 0.4;
+          opacity: 0.8;
        }
 
        .cube .one
        {
+
           -webkit-transform: translateZ(75px);
           transform: translateZ(75px);
        }
 
        .cube .two
        {
+
           -webkit-transform: rotateY(90deg) translateZ(75px);
           transform: rotateY(90deg) translateZ(75px);
        }
