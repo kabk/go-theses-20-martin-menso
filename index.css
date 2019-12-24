@@ -5,7 +5,7 @@ body {
 
 }
 
-.box{
+.mose01{
 width: 360px;
 height: 780px;
 padding: 20px;
@@ -13,6 +13,6 @@ margin: 0px auto;
 box-shadow: 0px 0px 0px 0px grey;
 border: 0px solid red;
 
-background-image: url(img/01.png);
+background-image: url(img/02.png);
 background-size: cover;
 }
