@@ -28,8 +28,13 @@ border: 0px solid green;
 position: absolute;
 background-image: url(img/layer01.png);
 background-size: cover;
-
+transition: 5s;
 }
+
+.layer01:hover{
+  box-shadow: 0 25px 60px rgba(0,0,0,.8);
+}
+
 .layer02{
 width: 360px;
 height: 780px;
@@ -40,6 +45,7 @@ border: 0px solid red;
 position: absolute;
 background-image: url(img/layer02.png);
 background-size: cover;
+/* transition: :translate (-50%,-50%); */
 }
 .layer03{
 width: 360px;
@@ -62,7 +68,10 @@ border: 0px solid red;
 position: absolute;
 background-image: url(img/layer04.png);
 background-size: cover;
+transition: 4s;
 }
+
+
 .layer05{
 width: 360px;
 height: 780px;
@@ -73,6 +82,7 @@ border: 0px solid red;
 position: absolute;
 background-image: url(img/layer05.png);
 background-size: cover;
+
 
 }
 .layer06{
@@ -85,4 +95,72 @@ border: 0px solid red;
 position: absolute;
 background-image: url(img/layer06.png);
 background-size: cover;
+}
+
+#breathing-button {
+
+    width: 360px;
+    height: 780px;
+    padding: 20px;
+    position: relative;
+  background-image: url(img/leaf02.png);
+
+
+    -webkit-animation: breathing 5s ease-out infinite normal;
+    animation: breathing 5s ease-out infinite normal;
+    /* font-size: 24px;
+
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    border-radius: 3px;
+    text-align: center; */
+    }
+
+
+@-webkit-keyframes breathing {
+  0% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  25% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  60% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  100% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+@keyframes breathing {
+  0% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  25% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+
+  60% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  100% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
 }
