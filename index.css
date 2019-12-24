@@ -31,9 +31,7 @@ background-size: cover;
 transition: 5s;
 }
 
-.layer01:hover{
-  box-shadow: 0 25px 60px rgba(0,0,0,.8);
-}
+
 
 .layer02{
 width: 360px;
@@ -45,7 +43,7 @@ border: 0px solid red;
 position: absolute;
 background-image: url(img/layer02.png);
 background-size: cover;
-/* transition: :translate (-50%,-50%); */
+
 }
 .layer03{
 width: 360px;
@@ -103,7 +101,7 @@ background-size: cover;
     height: 780px;
     padding: 20px;
     position: relative;
-  background-image: url(img/leaf02.png);
+  background-image: url(img/leaf03.png);
 
 
     -webkit-animation: breathing 5s ease-out infinite normal;
