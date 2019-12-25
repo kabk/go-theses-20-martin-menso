@@ -101,17 +101,9 @@ background-size: cover;
     height: 780px;
     padding: 20px;
     position: relative;
-  background-image: url(img/leaf03.png);
-
-
+    background-image: url(img/leaf04.png);
     -webkit-animation: breathing 5s ease-out infinite normal;
     animation: breathing 5s ease-out infinite normal;
-    /* font-size: 24px;
-
-    color: #fff;
-    -webkit-font-smoothing: antialiased;
-    border-radius: 3px;
-    text-align: center; */
     }
 
 
