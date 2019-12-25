@@ -2,12 +2,11 @@ body {
   padding: 0;
   margin: 0;
   background-color:black;
+
 }
 
-#smallbox {
-  position: relative;
-    cursor: pointer;
-}
+
+
 
 .layer0{
 width: 360px;
@@ -99,6 +98,8 @@ position: absolute;
 background-image: url(img/layer06.png);
 background-size: cover;
 }
+
+
 
 #breathing-button {
 
