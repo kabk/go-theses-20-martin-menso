@@ -4,6 +4,10 @@ body {
   background-color:black;
 }
 
+#smallbox {
+    cursor: pointer;
+}
+
 .layer0{
 width: 360px;
 height: 780px;
