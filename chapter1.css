@@ -26,6 +26,7 @@ body {
  text-align: justify;
   display: inline-block;
   hyphens: none;
+
 }
 
 .bodyTxt {
@@ -49,26 +50,6 @@ img{
   border-radius: 12px;
 }
 
-
-.figRef{
-  width: 100;
-  margin: 0 auto;
-  padding: 0 auto;
-  text-align:left;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 12px;
-  line-height: 1.25em;
-  color: #1255;
-  margin-left: 5%;
-  margin-right: 5%;
-  padding-top: 5%;
-  transition: 5s;
-  hyphens: auto;
-
-
-
-}
-
 .chapterName {
   text-shadow: 0px 0px gray;
   width: 100;
@@ -84,7 +65,7 @@ img{
   padding-top: 1%;
   transition: 5s;
   hyphens: auto;
-  font-style: italic;
+  font-style: bold;
 
 }
 
@@ -94,7 +75,7 @@ img{
   margin: 0 auto;
   padding: 0 auto;
   text-align:left;
-  font-family: "Arial", Helvetica, Arial, sans-serif;
+  font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
   font-size: 18px;
   line-height: 1.25em;
   color: #1255;
@@ -123,4 +104,50 @@ img{
   padding-top: 10px;
   padding-bottom: 10px;
 hyphens: auto;
+}
+
+.figRef{
+  width: 100;
+  margin: 0 auto;
+  padding: 0 auto;
+  text-align:left;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.25em;
+  color: #1255;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-top: 5%;
+  transition: 5s;
+  hyphens: auto;
+
+
+
+}
+
+.figRefSpin{
+  width: 100;
+  margin: 0 auto;
+  padding: 0 auto;
+  text-align:left;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.25em;
+  color: #1255;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-top: 5%;
+  transition: 5s;
+  hyphens: auto;
+  -webkit-animation:spin 8s linear infinite;
+  -moz-animation:spin 8s linear infinite;
+  animation:spin 20s linear infinite;
+
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+
+
 }
