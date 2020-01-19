@@ -44,6 +44,15 @@ body {
   font-style: italic;
 }
 
+.selfQuote1{
+  padding-top: 0rem;
+  font-size: 0.80rem;
+  line-height: 1rem;
+  margin-left: 1rem;
+  font-weight: bold;
+
+}
+
 
 img{
 
