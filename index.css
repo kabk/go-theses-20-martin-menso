@@ -1,11 +1,14 @@
 body {
   padding: 0;
   margin: 0;
-  background-color:black;
+  /* background-color:black; */
 
 }
 
 
+
+
+  border-radius: 12px;
 
 
 .layer0{
@@ -33,6 +36,7 @@ position: absolute;
 background-image: url(img/layer01.png);
 background-size: cover;
 transition: 5s;
+
 }
 
 
@@ -71,6 +75,7 @@ position: absolute;
 background-image: url(img/layer04.png);
 background-size: cover;
 transition: 4s;
+
 }
 
 

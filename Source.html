@@ -7,12 +7,59 @@
 
       <title>Source</title>
 
-<body>
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="toc.html">Abstract</a>
+          <a href="chapter1.html">Introduction</a>
+          <a href="chapter2.html">A Brief Notion On CGI</a>
+          <a href="chapter3.html">The Tree</a>
+          <a href="chapter4.html">The View</a>
+          <a href="chapter5.html">Conclusion</a>
+          <a href="source.html">Sources</a>
+        </div>
+      </div>
 
+
+
+
+
+
+
+
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+  <script>
+  function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+  }
+
+  function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+  }
+  </script>
+
+  <div class="chapterName">
+    <p class="chapterName"><b>(Sources)</b></p>
+  </div>
+  </div>
 
   <div class="source">
-  <img src="images/rock.png"  itemprop="thumbnail" alt="Image description" width="100%" data-depth='1.40'data-type='parallax'></div>
+  <img src="images/rock.png"  itemprop="thumbnail" alt="Image description" width="100%" data-depth='0.10'data-type='parallax'></div>
 </div>
+<div class="source">
+<img src="images/rock01.png"  itemprop="thumbnail" alt="Image description" width="100%" data-depth='0.20'data-type='parallax'></div>
+</div>
+
+
+<style>
+body {
+  background-image: url('img/lol.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+</style>
 
 
 

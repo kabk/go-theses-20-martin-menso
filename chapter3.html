@@ -5,6 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="chapter1.css">
 
+    <link rel="stylesheet"  href="styles/bigfoot-default.css"/>
+    <script type="text/javascript" src="script/jquery.js"></script>
+    <script src="script/bigfoot.js"></script>
+
+    <script>
+
+    var bigfoot = $.bigfoot();
+
+    </script>
+
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="toc.html">Abstract</a>
+        <a href="chapter1.html">Introduction</a>
+        <a href="chapter2.html">A Brief Notion On CGI</a>
+        <a href="chapter3.html">The Tree</a>
+        <a href="chapter4.html">The View</a>
+        <a href="chapter5.html">Conclusion</a>
+        <a href="source.html">Sources</a>
+      </div>
+    </div>
+
+
+
+
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+    <script>
+    function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+    }
+
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+    </script>
+
       <title>Chapter2</title>
 
 </head>
@@ -34,7 +72,7 @@
       It seems appropriate to start this chapter by mentioning Plato’s Allegory of the Cave.
 Many years ago, Plato, one of history’s most famous thinkers said and I rephrase: <i>life is like being
 chained up in a cave, forced to watch shadows flickering across a stone wall.</i> The
-prisoners or cave dwellers – and the case may be today, screen dwellers – occasionally observing the shadows casted on the stone wall by bodies walking back
+prisoners or cave dwellers – and the case may be today, screen dwellers<a href="#fn:12" rel="footnote"></a> – occasionally observing the shadows casted on the stone wall by bodies walking back
 and forth holding difference objects alongside a fire.
 <br>
 <br>The cave dwellers started to name and classify these reflected shadows, believing they were observing real entities, <b>like a child might believe the shadows at night to be real monsters.</b> Sooner or later, one of the cave dwellers was freed from the chains of `ignorance´ and wondered out of the darkness to a world bright and confusing, dazed powered by sunlight. When told that the things s/he now sees when looking at nature and that the trees are real and that the shadows of its complex structure of branches and leaves are merely reflections, s/he couldn't believe it, feeling even greater dazed and confused.
@@ -69,7 +107,7 @@ The painting by Lalita Hamill [see Figure 1.2] depicts Plato's Cave as a modern 
 <br>
     <br>In CGI the tree does not have a real existence as the physical tree in the outside-world has. This tree only exists as a representation assigned with material appearance, as something that is deconstructed and constructed by photographs and scans [see Figure 1.3], combined into a visual impression of a tree — <i>a collage of collected data</i> — with each of its properties, constructed and assigned to it (Dorsey, Rushmeier, Sillion, 2017).
 <br>
-    <br> In order for computers to recreate an accurate image of the tree, a construction such as a digital model must be created - a digital model is in essence, ingredients of shape, material and light that produces the visual image of a tree to seem credible to the eye — as a real object — as it appears on the screen. The modeling of digital objects is what gives the means to simulate how the representation of an object like a tree, its trunk and leaves would be displayed, in basic and more understandable terms — how we can copy and paste nature into new natural environments and make it seem realistic.
+    <br> In order for computers to recreate an accurate image of the tree, a construction such as a digital model must be created - a digital model is in essence, ingredients of shape, material and light<a href="#fn:13" rel="footnote"></a> that produces the visual image of a tree to seem credible to the eye — as a real object — as it appears on the screen. The modeling of digital objects is what gives the means to simulate how the representation of an object like a tree, its trunk and leaves would be displayed, in basic and more understandable terms — how we can copy and paste nature into new natural environments and make it seem realistic.
 <br>
     <br>By copy and pasting to form an image for the human perception to understand, we must model the geometry of the shape and describe the materiality of the surface. For instance the shared impression of a tree, is that it has a rugged and bumpy trunk and its leaves are green and vibrant in summer, yellow and fading in autumn, as seasons reflect change. This is a very basic description of a tree, but it works, for example we would not describe the trunk of a tree as a shiny plastic surface and its leaves as bright blue, it would be an absurd tree and we might not longer call it a tree. It would become something else in its representation, a manipulation to our mind, a mismatch of eye and brain. It is the correct description of impressions that forms a credible representation of nature and its trees — it is the vehicle that connects the form to the idea as a subject and object from nature.
 <br>
@@ -99,7 +137,7 @@ It is about how physical light interacts with a tree, how light leaves a source,
     <br>
     <br>
     Trees grow in nature as a natural process of water and sunlight forming a natural pattern of growing branches and leaves on a tree, outputting oxygen for us to breath.
-    <b>In a computer, a tree does not grow by the act of pouring water into it and leaving it in the sun.</b> No the simulation of growth is performed by an algorithm based on the Lindenmayer-system or in short: a L-system. A system that consists of an alphabet of symbols, in this case a branch and a leaf used to make strings, branches and leaves, that expand every symbol, translating the generated strings into geometric structures and voila, trees [see figure 1.4].
+    <b>In a computer, a tree does not grow by the act of pouring water into it and leaving it in the sun.</b> No the simulation of growth is performed by an algorithm<a href="#fn:14" rel="footnote"></a> based on the Lindenmayer-system<a href="#fn:15" rel="footnote"></a> or in short: a L-system. A system that consists of an alphabet of symbols, in this case a branch and a leaf used to make strings, branches and leaves, that expand every symbol, translating the generated strings into geometric structures and voila, trees [see figure 1.4].
 <br>
 <br>
     The different stages of the growth of a tree, simulated by a L-system is in essence a realistic digital model of an natural growing tree.
@@ -167,13 +205,13 @@ With an understanding of how CGI is rendering nature, but not necessarily an und
 
 <div class="noname" >
     <p class="bodyTxt">
-      In some ways similar to when house plants became popular in the 1950s as to reintroduce vegetation into houses and flats of the postwar era, as something healing and growing. Something artist Ian Bruner from RPG pointed out in my discussion with him about what is the meaning of 3D in his work and how the popularity of house plants in the 1950s is similar in its substitute and healing effect to why nature is being reproduced in CGI today. He is emphasizing that with the urbanization of the world, people are getting more and more distant from their interactions with nature, trees, dirt and unfiltered sun, arguing how our mammalian brain is perhaps secretly craving it, as we have lost or are losing the connection of a nostalgia for the natural of some ancient forest or island once inhabited (Bruner, 2019).
+      In some ways similar to when house plants became popular in the 1950s as to reintroduce vegetation into houses and flats of the postwar era, as something healing and growing. Something artist Ian Bruner from RPG<a href="#fn:16" rel="footnote"></a> pointed out in my discussion with him about what is the meaning of 3D in his work and how the popularity of house plants in the 1950s is similar in its substitute and healing effect to why nature is being reproduced in CGI today. He is emphasizing that with the urbanization of the world, people are getting more and more distant from their interactions with nature, trees, dirt and unfiltered sun, arguing how our mammalian brain<a href="#fn:17" rel="footnote"></a> is perhaps secretly craving it, as we have lost or are losing the connection of a nostalgia for the natural of some ancient forest or island once inhabited (Bruner, 2019).
       <br>
       <br>
       Some distant memory in the subconsciousness of modern culture as we continue to evolve from nostalgic houseplant of housewives, to substitute plants on screens. Similarly, in my discussion with other artists dealing with nature in CGI, it became apparent, that their notion of remaking nature in CGI is in a way to connect back to nature because it improved their mental health, but not like a walk in a forest but as an altered and disorientated stroll through the viewport of the computer. When a manipulation or miscommunication between our metaphysical categorization of objects takes place, something interesting happens - for better or worse. Something that became interesting in my discussion with the artist collective: <a href="http://www.mostdismalswamp.com/"><i>@Most_Dismal_Svamp</i></a> which ideas of nature in CGI were very much rooted in a belief that the tools of CGI have the power to explore the mutability of nature — <i>“how nature is not natural”</i> — it can be constructed and reconstructed, zoomed in on or zoomed out of, to an extent where the resemblance to nature is none and the reality of it is lost (MDS, 2019). Forming essentially a new one, a shiny plastic tree with bright blue leaves perhaps and a mismatch of eye and brain is in full effect. It offers a chance to explore the modern division of nature and culture, showing a much more blurry distinction and highlighting that it is becoming harder to believe the constructs of modernity and to distinguish between nonhuman life, us and technology.
       <br>
       <br>
-      Bruno Latour argues in his book: <i>We Have Never Been Modern</i> (1991), that the rise of technology and science has changed our modern world with no chance for us turning back, leading us always forward and forever separating us from our so-called primitive ancestors, as modernity has made a dualistic distinction between society and nature  - good or bad, this or that, one and zeroes. He is expressing a rethinking of these ideas, to not see natural phenomena and social phenomena as separate things though functioning as hybrids between non-humans, us and technology (Latour, 1992). And example of meaning could be that nature such as trees and phytoplankton provides us with oxygen that we need in order to survive and how the faith of humanity and nature are therefore very much intertwined, relying on each other.
+      Bruno Latour argues in his book: <i>We Have Never Been Modern</i> (1991), that the rise of technology and science has changed our modern world with no chance for us turning back, leading us always forward and forever separating us from our so-called primitive ancestors, as modernity has made a dualistic distinction between society and nature  - good or bad, this or that, one and zeroes. He is expressing a rethinking of these ideas, to not see natural phenomena and social phenomena<a href="#fn:18" rel="footnote"></a> as separate things though functioning as hybrids between non-humans, us and technology (Latour, 1992). And example of meaning could be that nature such as trees and phytoplankton<a href="#fn:19" rel="footnote"></a> provides us with oxygen that we need in order to survive and how the faith of humanity and nature are therefore very much intertwined, relying on each other.
       <br>
       <br>
       In our deconstruction and reconstruction we also find new functions of nature and perhaps a impression of the rethinking Latour talks about. A glimpse of how CGI can render nature differently, is apparent, in a selected sequence from the video work: <a href="http://www.mostdismalswamp.com/swampprotocol.html"><i>Swamp Protocol</i></a> [see Figure 1.8]. Where nature is being mutated with multiple logics and mixed layers of transparency, blurred and sharp, all at once, perhaps not for better or worse, but definitely for something else. Blurring the distinction between nature and technology, us and that. Enforcing a new idea of nature, mirroring the state of which society finds itself, confused and disoriented.
@@ -214,7 +252,14 @@ With an understanding of how CGI is rendering nature, but not necessarily an und
         <br>
             <br>
 
-
+            <li class="footnote" id="fn:12"> <p> Cave dwellers are humans who inhibited a cave and have to be understood as a symbolic meaning of living in darkness and therefore ignorance. A screen can somehow, be seen as our modern cave and therefore screen dwellers.</p> </li>
+            <li class="footnote" id="fn:13"><p> The <i>shape</i> of a digital model is geometry that houses the <i>material</i>, that depicts for example the green skin of a leaf. The material interact with <i>light</i> and are essential to the visual image, capability to seem realistic on a screen.</p></li>
+<li class="footnote" id="fn:14"><p> A procedure or formula for solving a problem, in this case how to grow a realistic tree.</p></li>
+<li class="footnote" id="fn:15"><p> L-systems, introduced and developed in 1968 by Aristid Lindenmayer, a Hungarian theoretical biologist and botanist at the University of Utrecht. Lindenmayer used L-systems to describe the behaviour of plant cells and to model the growth processes of plant development.</p></li>
+<li class="footnote" id="fn:16"><p> Rhizome Parking Garage, artist collective.</p></li>
+<li class="footnote" id="fn:17"><p> The Mammalian part of the brain as something often referred to as the emotional brain and a brain structure that we share with other mammals.</p></li>
+<li class="footnote" id="fn:18"><p> A study of behavioral aspects of a person that influences to another person.</p></li>
+<li class="footnote" id="fn:19"><p> David Attenborough is explaining in Our Plant: The High Seas, how phytoplankton produced half of the oxygen in the air we breath. <i>“So, no matter where you live, you can thank these exquisite little plants for every other breath you take”.</i></p></li>
 
     <div class="arrow">
     <a href="chapter2.html">back</a> <a href="toc.html">index</a> <a href="chapter4.html">next</a>

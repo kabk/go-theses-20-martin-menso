@@ -5,6 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="chapter1.css">
 
+
+    <link rel="stylesheet"  href="styles/bigfoot-default.css"/>
+    <script type="text/javascript" src="script/jquery.js"></script>
+    <script src="script/bigfoot.js"></script>
+
+    <script>
+
+    var bigfoot = $.bigfoot();
+
+    </script>
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="toc.html">Abstract</a>
+        <a href="chapter1.html">Introduction</a>
+        <a href="chapter2.html">A Brief Notion On CGI</a>
+        <a href="chapter3.html">The Tree</a>
+        <a href="chapter4.html">The View</a>
+        <a href="chapter5.html">Conclusion</a>
+        <a href="source.html">Sources</a>
+      </div>
+    </div>
+
+
+
+
+
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+    <script>
+    function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+    }
+
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+    </script>
+
       <title>Chapter2</title>
 
 </head>
@@ -16,6 +55,11 @@
         </div>
     </div>
 
+    <div class="figRef">
+    <img src="images/cover04.png"  itemprop="thumbnail" alt="Image description" width="100%" />
+
+    </div>
+
     <div class="titleTxt">
         <div class="noname">
           <p class="titleBig">*The Journey</p>
@@ -24,7 +68,7 @@
 
 <div class="noname" >
     <p class="bodyTxt">
-      CGI and its journey through the uncanny valley to the frontier of today, has been a journey full of discovery and innovation. In the beginning of the eighties, the representation of nature in CGI was limited, where every shape was formed and built from squares, e.g.  sand out of colored blocks and the notion of moving water by dashes and dots. When in contrast looking at today’s representation of nature in CGI where ultra realistic representations of a tree are created by quick duplications of its leaves and branches, filling the naked skeleton of the tree by a few clicks and tricks on the computer - it seems somehow like magical illusions. A breakthrough towards photorealism in CGI happened in the late-seventies and throughout the nineties, as a result of the personal computer, the <i>Apple II</i> becoming more accessible and powerful, making the <b>`playing ́</b> with CGI, more approachable for the `average ́ Joe or in other words and perhaps more suitable: the hobbyist. The sophisticated <i>Apple II</i>  features meant that it could be employed in a professional capacity as well as in the hobby room.
+      CGI and its journey through the uncanny valley<a href="#fn:7" rel="footnote"></a> to the frontier<a href="#fn:8" rel="footnote"></a> of today, has been a journey full of discovery and innovation. In the beginning of the eighties, the representation of nature in CGI was limited, where every shape was formed and built from squares, e.g.  sand out of colored blocks and the notion of moving water by dashes and dots. When in contrast looking at today’s representation of nature in CGI where ultra realistic representations of a tree are created by quick duplications of its leaves and branches, filling the naked skeleton of the tree by a few clicks and tricks on the computer - it seems somehow like magical illusions. A breakthrough towards photorealism in CGI happened in the late-seventies and throughout the nineties, as a result of the personal computer, the <i>Apple II</i><a href="#fn:9" rel="footnote"></a> becoming more accessible and powerful, making the <b>`playing ́</b> with CGI, more approachable for the `average ́ Joe or in other words and perhaps more suitable: the hobbyist. The sophisticated <i>Apple II</i>  features meant that it could be employed in a professional capacity as well as in the hobby room.
     </p>
     <p class="selfQuote">
 </p>
@@ -58,9 +102,11 @@
     </div>
     <div class="noname" >
         <p class="bodyTxt">
-          The pioneers of CGI and in their pursuit for high quality productions of representing natural scenery on the screen, created depictions and understandings through researching nature and how it would be possible to recreate <b>skies, waters, particles, motions, wind, fog, smoke, terrains and trees</b>, by mimicking the image force and materiality of natural scenes in a graphical representation onto a screen e.g. volumetric clouds [see Figure 0.6] <br>These depictions of physical reality became known as a library of simulating and visualising natural phenomena, simplified as the toolbox of nature. This toolbox is known as a CGI software or program, like Unreal Engine 4 (UE4), a powerful program for creating 3D environments or even complete worlds with countless layers. UE4 is making it possible for the hobbyist and not only the computer scientist or the big CGI studios to recreate realistic representations of nature, using the hands on and pre-build tools with its functionality of simulating real physical realities.
+          The pioneers of CGI and in their pursuit for high quality productions of representing natural scenery on the screen, created depictions and understandings through researching nature and how it would be possible to recreate <b>skies, waters, particles, motions, wind, fog, smoke, terrains and trees</b>, by mimicking the image force and materiality of natural scenes in a graphical representation onto a screen e.g. volumetric clouds [see Figure 0.6]
 <br>
-        <br>  This sudden accessibility of softwares and its tools and render engines, that were normally restricted to big production studios with big budgets, are now available for hobbyists and artist alike. The hobbyist therefore got into a position of being able to generate realistic looking nature, by the increasing normality and accessibility of 3D, prompted by technology.
+          <br>These depictions of physical reality became known as a library of simulating and visualising natural phenomena<a href="#fn:10" rel="footnote"></a>, simplified as the toolbox of nature. This toolbox is known as a CGI software or program, like Unreal Engine 4 (UE4), a powerful program for creating 3D environments or even complete worlds with countless layers. UE4 is making it possible for the hobbyist and not only the computer scientist or the big CGI studios to recreate realistic representations of nature, using the hands on and pre-build tools with its functionality of simulating real physical realities.
+<br>
+        <br>  This sudden accessibility of softwares and its tools and render engines<a href="#fn:11" rel="footnote"></a>, that were normally restricted to big production studios with big budgets, are now available for hobbyists and artist alike. The hobbyist therefore got into a position of being able to generate realistic looking nature, by the increasing normality and accessibility of 3D, prompted by technology.
         </p>
           </div>
 
@@ -69,7 +115,25 @@
               <figcaption> Fig <sup> 0.6 </sup> <i>Volumetric Clouds</i> (2020) purchased at the UE4 market for commodities like e.g. natural phenomena</figcaption>
           </div>
 
+          <div class="footnotes">
+          <ol>
+              <li class="footnote" id="fn:7"> <p> The uncanny valley is a connection between the level of an object's resemblance to a human being and the emotional and norms responses, to such an object or environment.</p> </li>
+              <li class="footnote" id="fn:8"><p> The frontier, where anything now can be simulated realistically.</p></li>
+              <li class="footnote" id="fn:9"><p> It is widely accepted that the Apple II, kick-started the personal computer industry, with its sophisticated
+features to be used both in professional settings and in the hobby room.
+</p></li>
+              <li class="footnote" id="fn:10"><p> The concept of natural phenomena is the simulation, modelling and understanding of natural processes. The physics of fluid oceans, the environmental sciences of running rivers, the biology of tissue growing, the
+behavioural differences in ecosystems of forests and deserts, to the understanding of huge volcano erupting in
+ Jurassic World (2018). The models that are built to simulate nature, are highly complex and
+come from an understanding of multidisciplinary entities, from being a physicist, mathematician, computer
+scientist, biologist, environmentalist to an economist. All combined in one.
+</p></li>
+<li class="footnote" id="fn:11"><p> 3D render engines are softwares that performs the transformation of a prepared 3D scene into a 2D image or
+animation.
+</p></li>
+            <ol>
 
+          </div>
 
 
     <div class="arrow">

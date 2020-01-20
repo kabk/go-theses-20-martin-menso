@@ -2,55 +2,153 @@
 body {
   padding: 0;
   margin: 0;
-  background-color:white;
-}
-
-
-/* .toclayer01{
-width: 100%;
-  height: 780px;
-  padding: 20px;
-  margin: 0px auto;
-  border: 0px solid red;
-  position: absolute;
-  background-image: url(img/toclayer01.png);
-  background-size: cover;
-  transition: 5s;
+  background-color:#ebebeb;
 
 
 }
 
-.toclayer02{
+
+
+
+/* .toclayer02{
   width: 100%;
   height: 830px;
   padding: 20px;
   margin: 0px auto;
   border: 0px solid red;
   position: absolute;
-  background-image: url(img/toclayer02.png);
+  background-image: url(images/toclayer02.png);
   background-size: cover;
-
-
-}
-
-.sun{
-width: 30px;
-height: 30px;
-padding: 40px;
-margin-left: 10px;
-margin-top: 10px;
-box-shadow: 0px 0px 0px 0px grey;
-border: 0px solid red;
-position: absolute;
-background-image: url(img/sun04.png);
-background-size: cover;
 
 
 } */
 
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+
+  top: 0;
+  left: 0;
+  background-color: #ebd834;
+  background-color: #266fff;
+  opacity: 80%;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top:15%;
+  width: 100%;
+  text-align: left;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 26px;
+  color: #85fa00;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #85fa00;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+
+
+
+
+
+
+
+a {
+  color: #1957ff;
+}
+
+
+img{
+
+  border-radius: 12px;
+}
+
+.figRef{
+  width: 100;
+  margin: 0 auto;
+  padding: 0 auto;
+  text-align:left;
+   font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 1.25em;
+  color: #1255;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-top: 2.5%;
+  transition: 5s;
+  hyphens: auto;
+
+}
+
+.chapterName {
+  text-shadow: 0px 0px gray;
+  width: 100;
+  margin: 0 auto;
+  padding: 0 auto;
+  text-align:center;
+   font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 1.25em;
+  color: #1255;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-top: 1%;
+  transition: 5s;
+  hyphens: auto;
+  font-style: bold;
+
+}
+
+.noname{
+  text-shadow: 0px 0px gray;
+  width: 100;
+  margin: 0 auto;
+  padding: 0 auto;
+  text-align:left;
+ font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.25em;
+  color: #1255;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-top: 0%;
+  transition: 5s;
+  hyphens: auto;
+}
+
 .titleBig{
   /* background-color: blue; */
-  font-family: "";
+   font-family: Arial, Helvetica, sans-serif;
   font-size: 3.5rem;
   line-height: 3.5rem;
   margin: 0 auto;
@@ -65,33 +163,18 @@ background-size: cover;
 
 .bodyTxt {
   padding-top: 0rem;
-  font-family: "";
+   font-family: Arial, Helvetica, sans-serif;
   text-indent: 10%;
 }
 
-.noname{
-  text-shadow: 0px 0px gray;
-  width: 100;
-  margin: 0 auto;
-  padding: 0 auto;
-  text-align:left;
-  font-family: "", ;
-  font-size: 18px;
-  line-height: 1.25em;
-  color: #1255;
-  margin-left: 5%;
-  margin-right: 5%;
-  padding-top: 0%;
-  transition: 5s;
-  hyphens: auto;
-}
+
 
 .arrow {
   width: 100;
   margin: 0 auto;
   padding: 0 auto;
   text-align:center;
-  font-family: ""
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 1.25em;
   color: #1555;
@@ -102,7 +185,23 @@ background-size: cover;
 hyphens: auto;
 }
 
-.sun {
+i {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+/* .sun {
     position: absolute;
     top: 10px;
     left: 10px;
@@ -115,14 +214,14 @@ hyphens: auto;
 }
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
-@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } } */
 
 .abstract01 {
   width: 100;
   margin: 0 auto;
   padding: 0 auto;
   text-align:left;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 1.25em;
   color: #1255;
@@ -131,17 +230,6 @@ hyphens: auto;
   padding-top: 5%;
   transition: 5s;
   hyphens: auto;
-
-
-
-}
-
-.source{
-  width: 120%;
-  color: #1255;
-
-  transition: 5s;
-
 
 
 
