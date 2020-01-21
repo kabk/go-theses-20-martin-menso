@@ -6,7 +6,11 @@ body {
 
 }
 
-
+.hamburger{
+  position: fixed;
+  left: 1%;
+  bottom: 95%;
+}
 
 
 .overlay {
@@ -158,7 +162,7 @@ img{
 }
 
 a {
-  color: #1957ff;
+  color: #66ff00;
 }
 
 a.absent{
@@ -173,9 +177,9 @@ a.absent{
   padding: 0 auto;
   text-align:center;
    font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 26px;
   line-height: 1.25em;
-  color: #1555;
+  color: green;
   margin-left: 5%;
   margin-right: 5%;
   padding-top: 10px;
