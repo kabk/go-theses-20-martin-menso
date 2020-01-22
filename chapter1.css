@@ -177,7 +177,7 @@ a.absent{
   padding: 0 auto;
   text-align:center;
    font-family: Arial, Helvetica, sans-serif;
-  font-size: 26px;
+  font-size: 22px;
   line-height: 1.25em;
   color: green;
   margin-left: 5%;
@@ -185,6 +185,9 @@ a.absent{
   padding-top: 10px;
   padding-bottom: 10px;
 hyphens: auto;
+
+text-decoration: none;
+
 }
 
 .figRef{
