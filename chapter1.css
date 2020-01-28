@@ -162,7 +162,7 @@ img{
 }
 
 a {
-  color: #66ff00;
+  color: #1255;
 }
 
 a.absent{
@@ -177,9 +177,9 @@ a.absent{
   padding: 0 auto;
   text-align:center;
    font-family: Arial, Helvetica, sans-serif;
-  font-size: 22px;
+  font-size: 18px;
   line-height: 1.25em;
-  color: green;
+  color: black;
   margin-left: 5%;
   margin-right: 5%;
   padding-top: 10px;
